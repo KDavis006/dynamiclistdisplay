@@ -4,6 +4,7 @@ const Dynamiclist = (d) => {
  const [data, setData] = useState(d)
  console.log(data)
 
+ // function for defining of it is going to be horizontal or vertical
  const specifications = () => {
   return (
    (data.orientation === 'horizontal') ? (
@@ -14,6 +15,7 @@ const Dynamiclist = (d) => {
   )
  }
 
+ // function for defining of it is going to be an ordered list or an unordered list
  const list = (o) => {
   return (
    (data.type === 'ol') ? (
@@ -38,6 +40,7 @@ const Dynamiclist = (d) => {
 
   return (
     <div className='container'>
+     {/* runs the function */}
      {specifications()}
     </div>
   )

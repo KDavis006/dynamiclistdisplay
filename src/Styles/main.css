@@ -1,26 +1,38 @@
 
 .horizontal {
+ /* removes the ol and ul tags original margins and paddings */
  margin: 0;
  padding: 0;
+/* sets width equal to the size of the container */
  max-width: 100%;
- max-height: 100%;
+ /* makes it a flexbox */
  display: flex;
+ /* adding direction to make it horizontal */
  flex-direction: row;
+ /* positioning */
  align-items: center;
  justify-content: center;
+ /* makes it be able to wrap */
  flex-wrap: wrap;
+ /* adds gap */
  gap: 4rem;
 }
 
 .vertical {
+ /* removes the ol and ul tags original margins and paddings */
  margin: 0;
  padding: 0;
+ /* sets its width to the same width as the container */
  max-width: 100%;
  max-height: 100%;
+ /* makes it a flex container */
  display: flex;
  flex-direction: column;
+ /* positioning */
  align-items: center;
  justify-content: center;
+ /* allows wrap */
  flex-wrap: wrap;
+ /* adds gap */
  gap: 2rem;
 }
